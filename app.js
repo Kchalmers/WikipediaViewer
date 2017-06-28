@@ -3,6 +3,11 @@ function Wikipedia() {
     this.initialize = function () {
         $(".random").click(this.getRandomArticle);
         $(".search").click(this.searchArticles);
+        $(document).keypress(function(event){
+            if(event.keyCode === 13){
+                self.searchArticles()
+            }
+        })
     };
     this.getRandomArticle = function () {
         window.open("https://en.wikipedia.org/wiki/Special:Random");
