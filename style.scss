@@ -1,0 +1,32 @@
+$header-size: 4em;
+$header-font: "AR DECODE", "Arial Black", sans-serif;
+$card-title-size: 2em;
+$card-color: black;
+$decoration: none;
+$card-margin: 1em;
+$card-shadow: black 3px 3px 5px;;
+
+header {
+  font-size: $header-size;
+  font-family: $header-font;
+}
+body {
+  background-color: peru;
+}
+a {
+  color: $card-color;
+  text-decoration: $decoration !important;
+  :hover,:focus {
+    color: $card-color;
+  }
+}
+.title {
+  font-size: $card-title-size;
+}
+.card {
+  margin: $card-margin;
+  box-shadow: $card-shadow;
+}
+button {
+  cursor: pointer;
+}
